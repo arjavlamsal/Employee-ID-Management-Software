@@ -3,6 +3,10 @@ import string
 import json
 import os
 
+EMPLOYEE_DETAILS_FILE = "employee_details.json"
+EMPLOYEE_ID_CHECK_FILE = "empID_check.txt"
+
+
 def generate_empID(length=10):
         characters = string.ascii_letters + string.digits
         empID = ''.join(random.choice(characters) for _ in range(length))
